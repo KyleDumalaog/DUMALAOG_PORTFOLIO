@@ -255,17 +255,6 @@ main.scroll-container {
 }
 
 
-.scroll-containerWeb {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 4 items per row */
-  gap: 10px;
-  padding: 140px 60px 60px;
-  max-width: 1400px;
-  margin: 0 auto;
-  
-}
-
-
 footer {
   width: 100%;
   background-color: #F1EFEF;
