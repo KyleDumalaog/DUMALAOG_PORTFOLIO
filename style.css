@@ -781,3 +781,95 @@ footer {
     font-size: 15px;
   }
 }
+
+
+/* 👇 Add this at the END of your CSS */
+
+/* For large devices (laptops/desktops > 1024px) */
+@media only screen and (min-width: 1025px) {
+    header {
+        padding: 20px 80px;
+    }
+
+    .animated-text {
+        font-size: clamp(60px, 8vw, 120px);
+    }
+
+    .text-box {
+        font-size: clamp(18px, 2vw, 25px);
+    }
+
+    .About .image img {
+        width: 500px;
+    }
+
+    .About .content h3 {
+        font-size: 60px;
+    }
+
+    .About .content p {
+        font-size: 18px;
+    }
+
+    .slider-img.active {
+        width: 550px !important;
+        height: 460px !important;
+    }
+
+    .Contacts .intro1,
+    .Contacts .intro2 {
+        font-size: 80px;
+    }
+
+    .Contacts .links {
+        padding: 20px 8rem;
+        font-size: 24px;
+    }
+
+    .Contacts .links a {
+        font-size: 24px;
+    }
+
+    .Contacts .num,
+    .Contacts .email {
+        font-size: 24px;
+    }
+}
+
+/* Optional: Slight refinement for tablets 600px–767px */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .animated-text {
+        font-size: 60px;
+    }
+
+    .text-box {
+        font-size: 18px;
+    }
+
+    .About .image img {
+        width: 280px;
+    }
+
+    .About .content h3 {
+        font-size: 30px;
+    }
+
+    .About .content p {
+        font-size: 10px;
+    }
+
+    .slider-img.active {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .Contacts .intro1,
+    .Contacts .intro2 {
+        font-size: 50px;
+    }
+
+    .Contacts .links,
+    .Contacts .links a {
+        font-size: 18px;
+    }
+}

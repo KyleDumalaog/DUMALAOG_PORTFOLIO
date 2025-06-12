@@ -14,10 +14,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .link {
   text-decoration: none;
   color: #545454;
 }
+
 /* Header */
 header {
   position: fixed;
@@ -105,24 +107,24 @@ header {
   }
 }
 
+/* Main Container */
 main.scroll-container {
-  padding: 160px 40px 40px; /* adjust for header */
+  padding: 160px 40px 40px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Exactly 4 per row */
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-
+/* Scroll Container */
 .scroll-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding: 140px 60px 60px;
   max-width: 1400px;
   margin: 0 auto;
-  
 }
 
 /* Card styling */
@@ -254,7 +256,6 @@ main.scroll-container {
   color: #666;
 }
 
-
 footer {
   width: 100%;
   background-color: #F1EFEF;
@@ -273,17 +274,31 @@ footer {
   margin: 0 auto 5px auto;
 }
 
-
-
-/* Responsive */
+/* Responsive Grid Adjustments */
 @media (max-width: 1024px) {
   .scroll-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .project-layout {
+    flex-direction: column;
+    padding: 120px 30px 30px;
+  }
+  .project-sidebar {
+    width: 100%;
+    position: relative;
+    top: unset;
   }
 }
 
 @media (max-width: 600px) {
   .scroll-container {
     grid-template-columns: 1fr;
+    padding: 120px 20px 40px;
+  }
+  header {
+    padding: 15px 20px;
+  }
+  .project-layout {
+    padding: 100px 20px 40px;
   }
 }
