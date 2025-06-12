@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyle Dumalaog's Portfolio</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="images/logo.png" class="logo">
+
+    <div class="sidebar">
+      <img src="images/logo.png" class="logoside">
+      <a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a class="activeside" href="Projects.html">Projects</a>
+      <a href="Contacts.html">Contacts</a>
+    </div>
+
+    <div class="navigation">
+      <a class="hideOnMobile" href="index.html">Home</a>
+      <a class="hideOnMobile" href="About.html">About</a>
+      <a class="hideOnMobile active" href="Projects.html">Projects</a>
+      <a class="hideOnMobile" href="Contacts.html">Contacts</a>
+      <a onclick="showsSidebar()" class="menuside" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46" viewBox="0 -960 960 960" width="46"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+    </div>
+
+    <script>
+      function showsSidebar() {
+        document.querySelector('.sidebar').style.display = 'flex';
+      }
+
+      function hideSidebar() {
+        document.querySelector('.sidebar').style.display = 'none';
+      }
+    </script>
+  </header>
+
+  <main class="project-layout">
+  <!-- Sidebar -->
+  <aside class="project-sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="Projects.html">Graphics</a></li>
+      <li><a href="websites.html">Websites</a></li>
+      <li><a href="videos.html">Videos</a></li>
+    </ul>
+  </aside>
+
+  <!-- Project Grid Content -->
+  <div class="scroll-containerWeb">
+
+    <!-- Websites -->
+        <section class="poster">
+        <div class="project">
+          <img src="images/quatromarias.PNG" alt="quatromarias">
+          <div class="project-info">
+            <h2>Quatro Marias PH</h2>
+            <p>2024 — WEBSYS 101</p>
+          </div>
+        </div>
+        </section>
+
+        <section class="poster">
+        <div class="project">
+          <img src="images/recharge.PNG" alt="recharge">
+          <div class="project-info">
+            <h2>Recharge</h2>
+            <p>2025 — Capstone Project</p>
+            <div class="link">
+              <a href="https://recharge-ashen.vercel.app/" target="_blank">View</a>
+          </div>
+          </div>
+        </div>
+</main>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/logo.png" class="logofooter">
+    <small>Copyright © 2024 Designed by Kyle Dumalaog. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>

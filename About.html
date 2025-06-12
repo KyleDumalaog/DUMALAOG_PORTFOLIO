@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+        <title>Kyle Dumalaog's Portfolio</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+            <!--HEADER-->
+        <header>
+            <img src="images/logo.png" class ="logo">
+
+            <div class="sidebar">
+                <img src="images/logo.png" class ="logoside">
+                <a onclick='hideSidebar()' href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>  
+                <a href="index.html">Home</a>            
+                <a class="activeside" href="About.html" >About</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Contacts.html">Contacts</a>
+            </div>
+            <div class="navigation">
+                <a class="hideOnMobile" href="index.html">Home</a>            
+                <a class="hideOnMobile active" href="About.html" >About</a>
+                <a class="hideOnMobile" href="Projects.html">Projects</a>
+                <a class="hideOnMobile" href="Contacts.html">Contacts</a>
+                <a onclick=showsSidebar() class="menuside" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="46" viewBox="0 -960 960 960" width="46"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+            <script>
+                function showsSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </header>
+        <div class="container">
+
+            <!--PER PAGE SCROLL-->
+
+            <section class="About" id="about">
+                <div class="aboutcont">
+                    <div class="image">
+                        <img src="images/me.jpg" alt="">
+                    </div>
+                    <div class="row">
+                    <div class="content">
+                        <h3>About Me</h3>
+                        <p>Hello, and welcome to my portfolio! My name is <b>Kyle Dumalaog</b>, and I'm a passionate Information Technology student with a keen interest in multimedia. As someone who loves to explore and discover new facets of myself, I find immense joy in delving into the world of multimedia, where creativity knows no bounds. <br><br>
+
+                        Beyond the digital realm, I'm also an avid sports enthusiast, particularly enjoying the exhilaration of playing volleyball. It's not just a pastime for me; it's a way to stay active, focused, and balanced amidst the demands of academic life.<br><br>
+                        
+                        My journey is fueled by a relentless pursuit of knowledge and self-discovery. I am constantly seeking to unravel the mysteries of my existence, pushing boundaries, and venturing beyond my comfort zone. I believe in taking risks, for it is through challenges and uncertainties that we truly grow.<br><br>
+                        
+                        In everything I do, whether it's tackling complex IT projects or spiking a volleyball, I strive to dedicate myself wholeheartedly. I pour my time and effort into my endeavors, always aiming to exceed expectations and achieve excellence.
+                        Join me as I embark on this exhilarating journey of learning, growth, and self-discovery. Together, let's push the boundaries of what's possible and unlock the true potential within us.
+                        <br><br>
+                        Thank you for visiting my portfolio, and I look forward to connecting with you!
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <img src="images/logo.png" class="logofooter"> 
+            <small>
+                Copyright © 2024 Designed by Kyle Dumalaog. All Rights Reserved. 
+            </small>
+        </footer>
+    </body>
+</html>

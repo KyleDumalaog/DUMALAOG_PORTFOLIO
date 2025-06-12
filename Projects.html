@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyle Dumalaog's Portfolio</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="images/logo.png" class="logo">
+
+    <div class="sidebar">
+      <img src="images/logo.png" class="logoside">
+      <a onclick="hideSidebar()" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </a>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a class="activeside" href="Projects.html">Projects</a>
+      <a href="Contacts.html">Contacts</a>
+    </div>
+
+    <div class="navigation">
+      <a class="hideOnMobile" href="index.html">Home</a>
+      <a class="hideOnMobile" href="About.html">About</a>
+      <a class="hideOnMobile active" href="Projects.html">Projects</a>
+      <a class="hideOnMobile" href="Contacts.html">Contacts</a>
+      <a onclick="showsSidebar()" class="menuside" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="46" viewBox="0 -960 960 960" width="46">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </a>
+    </div>
+
+    <script>
+      function showsSidebar() {
+        document.querySelector('.sidebar').style.display = 'flex';
+      }
+
+      function hideSidebar() {
+        document.querySelector('.sidebar').style.display = 'none';
+      }
+    </script>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="project-layout">
+    <!-- Sidebar -->
+    <aside class="project-sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="Projects.html">Graphics</a></li>
+        <li><a href="websites.html">Websites</a></li>
+        <li><a href="videos.html">Videos</a></li>
+      </ul>
+    </aside>
+
+    <!-- Project Grid Content -->
+    <div class="scroll-container">
+      <section class="poster">
+        <div class="project">
+          <img src="images/Countdown1.png" alt="Countdown Poster">
+          <div class="project-info">
+            <h2>Countdown Poster</h2>
+            <p>2023 — EE Days</p>
+          </div>
+        </div>
+      </section>
+
+        <section class="poster">
+        <div class="project">
+          <img src="images/Event Poster7.png" alt="Event Poster">
+          <div class="project-info">
+            <h2>Event Poster</h2>
+            <p>2023 — Battle of the Bands</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="poster">
+        <div class="project">
+          <img src="images/Educational Poster4.png" alt="Educational Poster">
+          <div class="project-info">
+            <h2>Educational Poster</h2>
+            <p>2023 — EE Days: Quiz Bee</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="poster">
+        <div class="project">
+          <img src="images/kamEElah5.png" alt="Team Logo">
+          <div class="project-info">
+            <h2>Team Logo</h2>
+            <p>2023 — EE ML Team Logo</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="poster">
+        <div class="project">
+          <img src="images/Team6.png" alt="Committee Poster">
+          <div class="project-info">
+            <h2>Committee Poster</h2>
+            <p>2023 — EE Creatives Committee</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="poster">
+        <div class="project">
+          <img src="images/invitation2.png" alt="Invitation">
+          <div class="project-info">
+            <h2>Invitation</h2>
+            <p>2023 — PLV Intramurals</p>
+          </div>
+        </div>
+      </section>
+
+        <section class="poster">
+        <div class="project">
+          <img src="images/Roster3.png" alt="Roster">
+          <div class="project-info">
+            <h2>Team Roster</h2>
+            <p>2023 — PLV MLBB</p>
+          </div>
+        </div>
+      </section>
+    
+        <section class="poster">
+        <div class="project">
+          <img src="images/packaging.jpg" alt="packaging">
+          <div class="project-info">
+            <h2>Packaging Tabletop Game</h2>
+            <p>2024 — Game Development</p>
+            <div class="link">
+              <a href="https://www.canva.com/design/DAGT19IQAUw/HFESL7H2NNlRCv83YceeTQ/view?utm_content=DAGT19IQAUw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">View</a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+            <section class="poster">
+        <div class="project">
+          <img src="images/ReChargeLOGO1.png" alt="Capstone Logo 1">
+          <div class="project-info">
+            <h2>Website Logo</h2>
+            <p>2025 — Capstone Project</p>
+          </div>
+        </div>
+        
+      </section>
+
+    </div>
+  </main>
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/logo.png" class="logofooter">
+    <small>Copyright © 2024 Designed by Kyle Dumalaog. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>
